@@ -65,7 +65,7 @@
             android:layout_height="15dp"/>
     </RelativeLayout>
     <view
-        android:background="E3E3E3"
+        android:background="#E3E3E3"
         android:layout_width="fill_parent"
         android:layout_height="1dp"/>
     <RelativeLayout
@@ -101,7 +101,7 @@
             android:layout_height="15dp"/>
     </RelativeLayout>
     <view
-        android:background="E3E3E3"
+        android:background="#E3E3E3"
         android:layout_width="fill_parent"
         android:layout_height="1dp"/>
 </LinearLayout>
