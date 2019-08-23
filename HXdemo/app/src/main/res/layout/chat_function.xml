@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/chat_function_building"
+            style="@style/text_function_item"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_building"
+            android:gravity="center"
+            android:text="楼盘" />
+
+        <TextView
+            android:id="@+id/chat_function_building_source"
+            style="@style/text_function_item"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_building_source"
+            android:gravity="center"
+            android:text="房源" />
+
+        <TextView
+            android:id="@+id/chat_function_activity"
+            style="@style/text_function_item"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_activity"
+            android:gravity="center"
+            android:text="活动" />
+
+        <TextView
+            android:id="@+id/chat_function_news"
+            style="@style/text_function_item"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_news"
+            android:gravity="center"
+            android:text="咨询" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/chat_function_capture"
+            style="@style/text_function_item"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_capture"
+            android:gravity="center"
+            android:text="拍照" />
+        <TextView
+            android:id="@+id/chat_function_album"
+            style="@style/text_function_item"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_album"
+            android:gravity="center"
+            android:text="相册" />
+
+        <TextView
+            android:id="@+id/chat_function_small_video"
+            style="@style/text_function_item"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_short_video"
+            android:gravity="center"
+            android:text="短视频" />
+        <TextView
+            android:id="@+id/chat_function_location"
+            style="@style/text_function_item"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/icon_location"
+            android:gravity="center"
+            android:text="位置" />
+    </LinearLayout>
+</LinearLayout>
