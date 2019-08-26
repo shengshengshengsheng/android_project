@@ -54,6 +54,8 @@ private String userName,passWord,spPassword;
             @Override
             public void onClick(View view) {
                 //跳转到找回密码界面
+                Intent intent=new Intent(LoginActivity.this,FindPswActivity.class);
+                startActivity(intent);
             }
         });
         //登录按钮的点击事件处理
@@ -83,6 +85,7 @@ private String userName,passWord,spPassword;
                     Intent data=new Intent();
                     data.putExtra("isLogin",true);
                     setResult(RESULT_OK,data);
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
                     LoginActivity.this.finish();
                     return;
                 }

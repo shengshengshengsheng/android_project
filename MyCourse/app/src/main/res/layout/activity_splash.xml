@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/tvWelcome"
         android:textSize="30dp"
-        android:text="欢迎使用博学谷"
+        android:text="欢迎使用"
         android:textColor="@color/colorAccent"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"

@@ -4,36 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
-    <LinearLayout
-        android:id="@+id/ll_head"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="240dp"
-        android:background="@drawable/myinfo_login_bg">
-        <ImageView
-            android:id="@+id/iv_head_icon"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="75dp"
-            android:src="@mipmap/iv_head_icon"/>
-        <TextView
-            android:id="@+id/tv_user_name"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:text="点击登录"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
+    <include layout="@layout/main_title_bar"/>
     <View
         android:background="#E3E3E3"
         android:layout_marginTop="20dp"
         android:layout_width="fill_parent"
         android:layout_height="1dp"/>
     <RelativeLayout
-        android:id="@+id/rl_course_history"
+        android:id="@+id/rl_modify_psw"
         android:layout_width="fill_parent"
         android:background="#F7F8F8"
         android:layout_gravity="center_vertical"
@@ -41,19 +19,19 @@
         android:paddingLeft="10dp"
         android:layout_height="50dp">
         <ImageView
-            android:id="@+id/iv_course_history_icon"
+            android:id="@+id/iv_modify_psw_icon"
             android:layout_width="20dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="25dp"
             android:layout_height="20dp"
-            android:src="@mipmap/course_history_icon"/>
+            android:src="@mipmap/modify_psw_icon"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="25dp"
-            android:layout_toRightOf="@id/iv_course_history_icon"
-            android:text="播放记录"
+            android:layout_toRightOf="@id/iv_modify_psw_icon"
+            android:text="修改密码"
             android:textColor="#A3A3A3"
             android:textSize="16sp"/>
         <ImageView
@@ -69,7 +47,7 @@
         android:layout_width="fill_parent"
         android:layout_height="1dp"/>
     <RelativeLayout
-        android:id="@+id/rl_setting"
+        android:id="@+id/rl_security_setting"
         android:layout_width="fill_parent"
         android:background="#F7F8F8"
         android:layout_gravity="center_vertical"
@@ -77,19 +55,60 @@
         android:paddingLeft="10dp"
         android:layout_height="50dp">
         <ImageView
-            android:id="@+id/iv_user_info_icon"
+            android:id="@+id/iv_security_setting_icon"
             android:layout_width="20dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="25dp"
             android:layout_height="20dp"
-            android:src="@mipmap/my_info_setting_icon"/>
+            android:src="@mipmap/security_setting_icon"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="25dp"
-            android:layout_toRightOf="@id/iv_user_info_icon"
-            android:text="设置"
+            android:layout_toRightOf="@id/iv_security_setting_icon"
+            android:text="设置密保"
+            android:textColor="#A3A3A3"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:layout_width="15dp"
+            android:src="@mipmap/iv_right_arrow"
+            android:layout_height="15dp"/>
+    </RelativeLayout>
+    <View
+        android:background="#E3E3E3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#E3E3E3"/>
+    <RelativeLayout
+        android:id="@+id/rl_exit_login"
+        android:layout_width="fill_parent"
+        android:background="#F7F8F8"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_exit_login_icon"
+            android:layout_width="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/exit_login_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/iv_exit_login_icon"
+            android:text="退出登录"
             android:textColor="#A3A3A3"
             android:textSize="16sp"/>
         <ImageView

@@ -11,7 +11,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.widget.TextView;
 
-import com.example.mycourse.MainActivity;
 import com.example.mycourse.R;
 
 public class SplashActivity extends AppCompatActivity {
