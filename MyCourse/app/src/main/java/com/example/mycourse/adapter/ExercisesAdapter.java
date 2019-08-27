@@ -1,6 +1,7 @@
 package com.example.mycourse.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.mycourse.R;
+import com.example.mycourse.activity.ExercisesDetailActivity;
 import com.example.mycourse.bean.ExerciseBean;
 
 import java.util.List;
@@ -79,6 +81,12 @@ public class ExercisesAdapter extends BaseAdapter {
                 if(bean==null)
                     return;
                 //跳转到习题详情页面
+                Intent intent=new Intent(mContext, ExercisesDetailActivity.class);
+                //把章节id传递到习题详情页面
+                intent.putExtra("id",bean.id);
+                //把标题传递到习题详情页面
+                intent.putExtra("title",bean.title);
+                mContext.startActivity(intent);
             }
         });
         return convertView;
