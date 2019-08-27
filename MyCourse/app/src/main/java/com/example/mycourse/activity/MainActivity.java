@@ -18,6 +18,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mycourse.R;
+import com.example.mycourse.view.ExercisesView;
 import com.example.mycourse.view.MyInfoView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tv_back;
     private TextView tv_main_title;
     private RelativeLayout rl_title_bar;
+    private ExercisesView mExercisesView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -197,10 +199,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void createView(int viewIndex) {
         switch (viewIndex){
             case 0:
-                //TODO:课程界面
+                //课程界面
                 break;
             case 1:
                 //习题界面
+                if(mExercisesView==null){
+                    mExercisesView=new ExercisesView(this);
+                    mBodyLayout.addView(mExercisesView.getView());
+                }else{
+                    mExercisesView.getView();
+                }
+                mExercisesView.showView();
                 break;
             case 2:
                 if(mMyInfoView==null){
